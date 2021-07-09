@@ -1,0 +1,12 @@
+node_modules
+build
+.env
+coverage
+cypress/videos
+cypress/screenshots
+node_modules
+build
+.env
+coverage
+cypress/videos
+cypress/screenshots

@@ -1,0 +1,25 @@
+{
+  "name": "backendphonebook",
+  "version": "0.0.1",
+  "description": "Backend for the phonebook application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "epic",
+    "project",
+    "best",
+    "ever"
+  ],
+  "author": "Aapo Leppänen",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/notes
+Content-type: application/json 
+
+{
+	"content": "I'm using postman to test this api",
+	"important": true
+}
