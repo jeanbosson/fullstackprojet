@@ -1,0 +1,33 @@
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "admin",
+    "password" : "control"
+}
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "root",
+    "password" : "micro"
+}
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "root",
+    "password" : "microaasd"
+}
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "Qaafirna",
+    "password" : "happy"
+}

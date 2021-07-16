@@ -1,0 +1,40 @@
+GET http://localhost:3003/api/blogs
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlFhYWZpcm5hIiwiaWQiOiI2MDg2N2E4ZmMxODgzMDViZjQwZDZjYTUiLCJpYXQiOjE2MTk0MjU5NjMsImV4cCI6MTYxOTQyOTU2M30.9EcCQDyvVGmp2XwSjnui1lZkGVQNv6zcn4PWon-bxdI
+
+###
+GET http://localhost:3003/api/blogs/test
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlFhYWZpcm5hIiwiaWQiOiI2MDg2N2E4ZmMxODgzMDViZjQwZDZjYTUiLCJpYXQiOjE2MTk0MjU5NjMsImV4cCI6MTYxOTQyOTU2M30.9EcCQDyvVGmp2XwSjnui1lZkGVQNv6zcn4PWon-bxdI
+###
+POST  http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "title" : "Testing with user ID",
+    "author" : "MKBHD",
+    "url" : "www.youtube.com",
+    "likes" : 10
+}
+
+###
+POST  http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlFhYWZpcm5hIiwiaWQiOiI2MDg2N2E4ZmMxODgzMDViZjQwZDZjYTUiLCJpYXQiOjE2MTk0MjU5NjMsImV4cCI6MTYxOTQyOTU2M30.9EcCQDyvVGmp2XwSjnui1lZkGVQNv6zcn4PWon-bxdI
+
+{
+    "title" : "Maybe another post with new middleware",
+    "author" : "Purple",
+    "url" : "www.purias.com",
+    "likes" : 10
+}
+
+###
+DELETE http://localhost:3003/api/blogs/60867b07c188305bf40d6ca7
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlFhYWZpcm5hIiwiaWQiOiI2MDg2N2E4ZmMxODgzMDViZjQwZDZjYTUiLCJpYXQiOjE2MTk0MjU5NjMsImV4cCI6MTYxOTQyOTU2M30.9EcCQDyvVGmp2XwSjnui1lZkGVQNv6zcn4PWon-bxdI
+
+###
+PUT http://localhost:3003/api/blogs/6082cdbbffa39c2695c21cfb
+Content-Type: application/json
+
+{
+    "likes" : 10
+}
